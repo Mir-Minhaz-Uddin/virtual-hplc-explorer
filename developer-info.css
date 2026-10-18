@@ -1,0 +1,31 @@
+.developer-info-button {
+  width: auto !important;
+  min-width: max-content;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 20px !important;
+  padding: 0 13px 0 11px !important;
+}
+
+.developer-info-button .info-icon {
+  font: bold 22px/1 Georgia, serif !important;
+}
+
+.developer-info-button .info-label {
+  font: 600 12px/1 system-ui, sans-serif !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .developer-info-button {
+    height: 36px;
+    gap: 6px;
+    padding: 0 11px 0 9px !important;
+  }
+
+  .developer-info-button .info-label {
+    font-size: 11px !important;
+  }
+}
