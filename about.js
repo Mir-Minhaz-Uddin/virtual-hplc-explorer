@@ -1,5 +1,10 @@
 const aboutDialog=document.getElementById('aboutDialog');
 const aboutButton=document.getElementById('aboutButton');
+Object.assign(aboutButton.style,{width:'auto',display:'inline-flex',alignItems:'center',justifyContent:'center',gap:'8px',borderRadius:'20px',padding:'0 13px 0 11px'});
+const infoIcon=aboutButton.querySelector('.info-icon');
+const infoLabel=aboutButton.querySelector('.info-label');
+Object.assign(infoIcon.style,{font:'bold 22px Georgia, serif',lineHeight:'1'});
+Object.assign(infoLabel.style,{font:'600 12px system-ui, sans-serif',whiteSpace:'nowrap'});
 let previousOverflow='';
 aboutButton.addEventListener('click',()=>{previousOverflow=document.body.style.overflow;aboutDialog.showModal();document.body.style.overflow='hidden'});
 document.getElementById('aboutClose').addEventListener('click',()=>aboutDialog.close());
